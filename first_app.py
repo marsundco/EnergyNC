@@ -43,7 +43,7 @@ if uploaded_file is not None:
      #Add a placeholder
     bar = progress_comp()
     left_col.success('Upload succesful!')
-    image = Image.open('bsp2.png')
+    image = Image.open('bsp.png')
     left_col.image(image, caption='Geladene Step Datei', use_column_width='always')
     #left_col.write('Calculated!')
 
