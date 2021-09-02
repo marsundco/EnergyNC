@@ -1,7 +1,6 @@
 streamlit
 numpy
 pandas
-PIL
 time
 pickle
 sklearn
