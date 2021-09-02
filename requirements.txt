@@ -1,10 +1,10 @@
-from io import StringIO
-import streamlit as st
-import numpy as np
-import pandas as pd
-from PIL import Image
-import time
-import pickle
-from sklearn.metrics import mean_absolute_error
-from math import sqrt, pow
-import matplotlib.pyplot as plt
+io
+streamlit
+numpy
+pandas
+PIL
+time
+pickle
+sklearn
+math
+matplotlib
