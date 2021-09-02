@@ -29,7 +29,7 @@ st.image(header_pic,
 Load your gcode-file and get a accurate prediction for the energy consumed in production.
 """
 
-left_col, right_col = st.beta_columns(2)
+left_col, right_col = st.columns(2)
 
 left_col.header('File upload')
 right_col.header('Part specifications')
@@ -43,7 +43,7 @@ if uploaded_file is not None:
      #Add a placeholder
     bar = progress_comp()
     left_col.success('Upload succesful!')
-    image = Image.open('bsp.png')
+    image = Image.open('bsp2.png')
     left_col.image(image, caption='Geladene Step Datei', use_column_width='always')
     #left_col.write('Calculated!')
 
