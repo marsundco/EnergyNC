@@ -9,6 +9,7 @@ from sklearn.metrics import mean_absolute_error
 from math import sqrt, pow
 import matplotlib.pyplot as plt
 
+
 @st.cache(suppress_st_warning=True)
 def progress_comp():
     bar = left_col.progress(0)
