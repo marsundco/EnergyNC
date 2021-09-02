@@ -1,8 +1,5 @@
 streamlit
 numpy
 pandas
-time
 pickle
 sklearn
-math
-matplotlib
