@@ -192,3 +192,16 @@ if uploaded_file is not None and submit_button:
         }
     )
     st.line_chart(chart_T)
+
+    st.subheader('Gesamtverbrauch')
+    VerbrauchLi = [['X-Achse', y2['ENERGY|x'].sum().round(0), df_pred[0].sum().round(0)],
+    ['Y-Achse', y2['ENERGY|y'].sum().round(0), df_pred[1].sum().round(0)],
+    ['Z-Achse', y2['ENERGY|z'].sum().round(0), df_pred[2].sum().round(0)],
+    ['Spindel', y2['ENERGY|S'].sum().round(0), df_pred[3].sum().round(0)],
+    ['Werkzeugwechsel', y2['ENERGY|T'].sum().round(0), df_pred[4].sum().round(0)]
+    ]
+    
+    Verbrauch = pd.DataFrame(VerbrauchLi, columns=['Aggregat', 'Vorhersagen', 'Messungen'])
+    Verbrauch
+
+    st.success('Der Gesamtenergiebedarf zur Fertigung dieses Bauteils liegt bei: ***' +  str((Verbrauch['Messungen'].sum()/3600).round(1)) + ' Wh***')
